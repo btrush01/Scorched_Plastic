@@ -1,0 +1,108 @@
+body {
+  background-color: #E3E3E3;
+}
+
+@font-face{
+  font-family: "desert";
+  src: url('font/camouflage-desert.ttf') format('truetype');
+}
+@font-face{
+  font-family: "urban";
+  src: url('font/camouflage-urban.ttf') format('truetype');
+}
+@font-face{
+  font-family: "jungle";
+  src: url('font/camouflage-jungle.ttf') format('truetype');
+}
+@font-face{
+  font-family: "snow";
+  src: url('font/camouflage-snow.ttf') format('truetype');
+}
+@font-face{
+  font-family: "woodland";
+  src: url('font/camouflage-woodland.ttf') format('truetype');
+}
+@font-face{
+  font-family: "top-secret";
+  src: url('font/armalite.ttf') format('truetype');
+}
+
+/*common Army Men colors*/
+h1 {
+  color: #064F40; /*Green*/
+  text-align: center;
+  font: 75px "woodland", arial;
+}
+h2 {
+  color: #D5A170; /*Tan*/
+  text-align: center;
+  font: 75px "desert", arial;
+}
+h3 {
+  color: #858885; /*Gray*/
+  text-align: center;
+  font: 75px "urban", arial;
+}
+h4 {
+  color: #CC0000; /*Red*/
+  text-align: center;
+  font: 75px "jungle", arial;
+}
+h5 {
+  color: #003366; /*Blue*/
+  text-align: center;
+  font: 75px "snow", arial;
+}
+
+/*other headers*/
+/*div {
+  color: #F50E1A;
+  border: 5px solid;
+  text-align: center;
+  font: 50px "top-secret", arial;
+}*/
+
+h6 {
+  color: #F50E1A; /*Bright Red*/
+  border-style: solid;
+  border-width: 5px 5px;
+  margin: 5px;
+  display: inline-block;
+  font: 50px "top-secret", arial;
+}
+
+.military-typewriter {
+  font: 20px "top-secret", arial;
+}
+
+.military-typewriter-top-secret {
+  color: #F50E1A; /*Bright Red*/
+  border-style: solid;
+  border-width: 2px 2px;
+  margin: 5px;
+  display: inline-block;
+  font: 20px "top-secret", arial;
+}
+
+.header-wrapper {
+  text-align: center;
+}
+
+.p1 {
+  text-align: justify;
+  text-indent: 40px;
+  width: 60%;
+  font-family: "Courier New";
+}
+
+.p2 {
+  text-align: justify;
+  margin-left: 40px;
+  width: 60%;
+  font: "Courier New", arial;
+}
+
+ul li {
+    list-style-image: url('img/bayonet-bullet.jpg');
+    /*font: 30px arial;*/
+}
