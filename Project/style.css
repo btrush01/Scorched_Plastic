@@ -95,13 +95,6 @@ h6 {
   font-family: "Courier New";
 }
 
-.p2 {
-  text-align: justify;
-  margin-left: 40px;
-  width: 60%;
-  font: "Courier New", arial;
-}
-
 ul li {
     list-style-image: url('img/bayonet-bullet.jpg');
     /*font: 30px arial;*/
