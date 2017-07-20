@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #E3E3E3;
 }
@@ -31,6 +35,7 @@ body {
 h1 {
   color: #064F40; /*Green*/
   text-align: center;
+  display: inline-block;
   font: 75px "woodland", arial;
 }
 h2 {
@@ -53,15 +58,6 @@ h5 {
   text-align: center;
   font: 75px "snow", arial;
 }
-
-/*other headers*/
-/*div {
-  color: #F50E1A;
-  border: 5px solid;
-  text-align: center;
-  font: 50px "top-secret", arial;
-}*/
-
 h6 {
   color: #F50E1A; /*Bright Red*/
   border-style: solid;
@@ -70,32 +66,116 @@ h6 {
   display: inline-block;
   font: 50px "top-secret", arial;
 }
-
-.military-typewriter {
-  font: 20px "top-secret", arial;
-}
-
-.military-typewriter-top-secret {
-  color: #F50E1A; /*Bright Red*/
-  border-style: solid;
-  border-width: 2px 2px;
-  margin: 5px;
-  display: inline-block;
-  font: 20px "top-secret", arial;
-}
-
+/* flex wrappers and media queries*/
 .header-wrapper {
   text-align: center;
 }
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-left: 15%; margin-right: 15%;
+}
 
+.flex-wrapper > div {
+  width: 100%;
+}
+
+.flex-wrapper > div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-wrapper > div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .flex-wrapper > div {
+    width: 25%;
+  }
+}
+/*body fonts*/
 .p1 {
   text-align: justify;
   text-indent: 40px;
+  margin: 0 20%;
   width: 60%;
-  font-family: "Courier New";
+  font-family: "Courier New", arial;
+}
+.p2 {
+  text-align: center;
+  font-family: "Courier New", arial;
+}
+.all-caps {
+  color:#000; /*Black*/
+  font: 15px "top-secret", arial;
+  text-align: center;
+}
+/*ordinary images*/
+.home-img {
+  position: relative;
+  margin-left: 20%; margin-right: 20%;
+}
+.flag-img {
+  display: inline-block;
+}
+/*remove bullets from js navbar*/
+.no-bullet {
+  list-style-type: none;
+}
+.no-bullet li a {
+  color: #000; /*Black*/
+  background-color: #D5A170; /*Tan*/
+  border-color: #D5A170;
+  border-style: solid;
+  border-width: 3px 3px;
+  margin: 5px;
+  font: 20px "top-secret", arial;
+  margin-left: 20%; margin-right: 20%;
+  text-decoration: none;
+}
+/*the active JS navbar tab*/
+.no-bullet li.active a {
+  color: #F50E1A; /*Bright Red*/
+  background-color: #E3E3E3; /*body color*/
+  border-color: #F50E1A;
+  border-style: solid;
+  border-width: 3px 3px;
+  margin: 5px;
+  display: inline-block;
+  font: 20px "top-secret", arial;
+  margin-left: 20%; margin-right: 20%;
+}
+.custom-bullet li {
+  list-style-image: url("img/bayonet-bullet.jpg");
 }
 
-ul li {
-    list-style-image: url('img/bayonet-bullet.jpg');
-    /*font: 30px arial;*/
+
+
+/*lightbox functionality*/
+#thumbnail img {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+#large {
+    display: none;
+    position: fixed;
+    background: #FFFFFF;
+    padding: 5px;
+    z-index: 10;
+    font-family: "Courier New";
+    min-height: 200px;
+    min-width: 200px;
+}
+#background{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: 1;
 }
