@@ -181,3 +181,7 @@ h6 {
     background: #000000;
     z-index: 1;
 }
+
+footer {
+  padding: 50px;
+}
